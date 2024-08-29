@@ -1,13 +1,10 @@
 import React from 'react'
 
-const AccordianItem = ({showItem , setShowItem, title , description}) => {
-    const handleClick= ()=>{
-        setShowItem(!showItem)
-        
-    }
+const AccordianItem = ({showItem , toggleIndices, title , description}) => {
+   
   return (
     <div>
-      <div onClick={handleClick} className='flex justify-between items-center  border-black border bg-gray-300'>
+      <div onClick={toggleIndices} className='flex justify-between items-center  border-black border bg-gray-300'>
         <span className='font-bold p-2'>{title}</span>
         <span className='text-4xl p-2'> ⌄ </span>
       </div>

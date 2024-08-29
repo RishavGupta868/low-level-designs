@@ -20,7 +20,15 @@ const data = [
 ];
 
 const Accordian = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndices, setOpenIndices] = useState([0]);
+
+  const toggleIndices = (index)=>{
+    if(openIndices.includes(index)){
+      setOpenIndices(openIndices.filter((i)=> i !== index))
+    }else{
+      setOpenIndices([...openIndices , index])
+    }
+  }
 
   return (
     <div className="m-auto my-6 py-4 border border-black w-[700px] rounded-lg">
@@ -30,8 +38,8 @@ const Accordian = () => {
             title={item.title}
             description={item.description}
             key={index}
-            showItem={index===openIndex}
-            setShowItem={()=> {index===openIndex ? setOpenIndex(null): setOpenIndex(index)}}
+            showItem={openIndices.includes(index)}
+            toggleIndices={()=> toggleIndices(index)}
           />
         );
       })}
