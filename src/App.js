@@ -6,6 +6,7 @@ import ProfilePage from "./components/ProfilePage";
 import LoginPage from "./components/LoginPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import {  useState } from "react";
+import Accordian from "./components/Accordian";
 
 const AppLayout = () => {
   const [lang , setLang]= useState('en');
@@ -43,6 +44,10 @@ const appRouter = createBrowserRouter([
             <ProfilePage />
           </ProtectedRoute>
         )
+      },
+      {
+        path: "/accordian",
+        element: <Accordian />,
       },
     ],
   },
