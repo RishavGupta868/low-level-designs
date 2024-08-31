@@ -19,8 +19,11 @@ const Header = ({ lang, setLang }) => {
         <Link to={"/profile"} className="pr-8">
           Profile
         </Link>
-        <Link to={"/accordian"}>
+        <Link to={"/accordian"} className="pr-8">
          Accordian
+        </Link>
+        <Link to={"/comments"} className="pr-8">
+         Nested Comments
         </Link>
       </nav>
       {isAboutPage && (

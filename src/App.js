@@ -7,6 +7,7 @@ import LoginPage from "./components/LoginPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import {  useState } from "react";
 import Accordian from "./components/Accordian";
+import CommentBox from "./components/nestedComments/CommentBox"
 
 const AppLayout = () => {
   const [lang , setLang]= useState('en');
@@ -48,6 +49,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/accordian",
         element: <Accordian />,
+      },
+      {
+        path: "/comments",
+        element: <CommentBox/>,
       },
     ],
   },
