@@ -25,6 +25,9 @@ const Header = ({ lang, setLang }) => {
         <Link to={"/comments"} className="pr-8">
          Nested Comments
         </Link>
+        <Link to={"/image-slider"} className="pr-8">
+        Image Slider
+        </Link>
       </nav>
       {isAboutPage && (
         <div>

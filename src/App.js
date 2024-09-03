@@ -8,6 +8,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import {  useState } from "react";
 import Accordian from "./components/Accordian";
 import CommentBox from "./components/nestedComments/CommentBox"
+import ImageSlider from "./components/imageSlider/ImageSlider";
 
 const AppLayout = () => {
   const [lang , setLang]= useState('en');
@@ -53,6 +54,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/comments",
         element: <CommentBox/>,
+      },
+      {
+        path: "/image-slider",
+        element: <ImageSlider/>,
       },
     ],
   },

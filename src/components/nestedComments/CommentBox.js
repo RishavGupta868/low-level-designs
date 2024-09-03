@@ -54,6 +54,11 @@ const data = [
         name: "H Gupta",
         comment: "This is my reply to third Comment",
       },
+      {
+        id: 20,
+        name: "Hi Gupta",
+        comment: "This is my reply to thirddd Comment",
+      },
     ]},
     {
     id: 9,
