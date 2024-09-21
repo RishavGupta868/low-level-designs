@@ -12,8 +12,9 @@ const data = [
         name: "A Gupta",
         comment: "This is my reply to first Comment",
       },
-    ]},
-    {
+    ],
+  },
+  {
     name: "B Gupta",
     comment: "This is my second Comment",
     replies: [
@@ -30,12 +31,14 @@ const data = [
               {
                 id: 5,
                 name: "E Gupta",
-                comment: "This is my reply to the reply to the reply of second Comment",
+                comment:
+                  "This is my reply to the reply to the reply of second Comment",
                 replies: [
                   {
                     id: 6,
                     name: "F Gupta",
-                    comment: "This is my reply to the reply to the reply to the reply of second Comment",
+                    comment:
+                      "This is my reply to the reply to the reply to the reply of second Comment",
                   },
                 ],
               },
@@ -43,8 +46,9 @@ const data = [
           },
         ],
       },
-    ]},
-    {
+    ],
+  },
+  {
     id: 7,
     name: "G Gupta",
     comment: "This is my third Comment",
@@ -59,8 +63,9 @@ const data = [
         name: "Hi Gupta",
         comment: "This is my reply to thirddd Comment",
       },
-    ]},
-    {
+    ],
+  },
+  {
     id: 9,
     name: "J Gupta",
     comment: "This is my fourth Comment",
@@ -77,8 +82,9 @@ const data = [
           },
         ],
       },
-    ]},
-    {
+    ],
+  },
+  {
     id: 12,
     name: "M Gupta",
     comment: "This is my fifth Comment",
@@ -88,9 +94,27 @@ const data = [
 
 const CommentBox = () => {
   return (
-    <div>
-        {data.map((comment)=> <Comment key={comment.id} data={comment} />)}
-      
+    <div className="">
+      <img
+        className="absolute opacity-50"
+        src="https://i.redd.it/hrqut3wddag01.png"
+        alt="bg-image"
+      />
+       <img
+        className="absolute mt-[618px] opacity-50"
+        src="https://i.redd.it/hrqut3wddag01.png"
+        alt="bg-image"
+      />
+       <img
+        className="absolute mt-[1237px] opacity-50"
+        src="https://i.redd.it/hrqut3wddag01.png"
+        alt="bg-image"
+      />
+      <div className="relative">
+        {data.map((comment) => (
+          <Comment key={comment.id} data={comment} />
+        ))}
+      </div>
     </div>
   );
 };

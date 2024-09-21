@@ -30,7 +30,7 @@ useEffect(()=>{
       <div className="m-4 p-4 flex justify-center items-center">
         <img
           onClick={prevImage}
-          className="w-20 h-20 mx-20 cursor-pointer"
+          className="w-14 h-14 -mx-20 relative cursor-pointer"
           src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
           alt="left-arrow"
         />
@@ -41,7 +41,7 @@ useEffect(()=>{
         />
         <img
           onClick={nextImage}
-          className="w-20 h-20 mx-20 cursor-pointer"
+          className="w-14 h-14 -mx-20 relative  cursor-pointer"
           src="https://cdn-icons-png.flaticon.com/512/271/271228.png"
           alt="right-arrow"
         />

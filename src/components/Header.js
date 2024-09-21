@@ -28,6 +28,9 @@ const Header = ({ lang, setLang }) => {
         <Link to={"/image-slider"} className="pr-8">
         Image Slider
         </Link>
+        <Link to={"/live-chat"} className="pr-8">
+        Youtube Live Chat
+        </Link>
       </nav>
       {isAboutPage && (
         <div>

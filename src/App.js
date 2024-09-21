@@ -9,6 +9,7 @@ import {  useState } from "react";
 import Accordian from "./components/Accordian";
 import CommentBox from "./components/nestedComments/CommentBox"
 import ImageSlider from "./components/imageSlider/ImageSlider";
+import LiveChat from "./components/youtube-live-chats/LiveChat";
 
 const AppLayout = () => {
   const [lang , setLang]= useState('en');
@@ -58,6 +59,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/image-slider",
         element: <ImageSlider/>,
+      },
+      {
+        path: "/live-chat",
+        element: <LiveChat/>,
       },
     ],
   },
