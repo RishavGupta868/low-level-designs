@@ -31,6 +31,9 @@ const Header = ({ lang, setLang }) => {
         <Link to={"/live-chat"} className="pr-8">
         Youtube Live Chat
         </Link>
+        <Link to={"/search-ui"} className="pr-8">
+        Google Search
+        </Link>
       </nav>
       {isAboutPage && (
         <div>

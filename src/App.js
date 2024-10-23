@@ -10,6 +10,7 @@ import Accordian from "./components/Accordian";
 import CommentBox from "./components/nestedComments/CommentBox"
 import ImageSlider from "./components/imageSlider/ImageSlider";
 import LiveChat from "./components/youtube-live-chats/LiveChat";
+import Search from "./components/SearchUI/Search";
 
 const AppLayout = () => {
   const [lang , setLang]= useState('en');
@@ -63,6 +64,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/live-chat",
         element: <LiveChat/>,
+      },
+      {
+        path: "/search-ui",
+        element: <Search/>,
       },
     ],
   },
